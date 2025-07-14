@@ -1,0 +1,74 @@
+//    ./layouts/_profession.scss
+
+.profession {
+
+    // -> info__profession
+    // font-size: 14px;
+    // font-weight: 700;
+    // line-height: 24px;
+    // margin-bottom: 23px;
+
+    // @media screen and (max-width: 600px) {
+    //     margin-bottom: 10px;
+    // }
+
+
+    // .profession-title {
+    // .profession__title 
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 10px;
+        /* margin-bottom: 15px;  убрать, чтобы ближе серенькие даты были к заголовку */
+
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 0;
+        }
+    }
+
+    // .profession-company {
+    // profession__company
+    &__company {
+        color: #ff7011;
+    }
+
+
+    // .profession-time {
+    // profession__time {
+    &__time {
+        color: #a8a8a8;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+
+    // .profession-divider {
+    // profession__divider {
+    &__divider {
+        color: #000;
+    }
+
+
+    // .profession-duties {
+    // profession__duties {
+    &__duties {
+        margin-top: 14px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 0;
+        }
+
+        // .profession-duties-item {
+        // profession__duties--item {
+        &--item {
+            color: #595959;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}

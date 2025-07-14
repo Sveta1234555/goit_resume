@@ -1,0 +1,33 @@
+// .about-me-container {
+//     .about-me__container {
+.about-me {
+    &__container {
+        //правая оснвная часть (собдержит все остальные разделы)
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 110px;
+        padding-bottom: 110px;
+        // flex-shrink: 0;   после примеров chatgpt с flexgrow 1  стали странно себя вести при ресайз оснчасть справа
+        // в десктопной версии - при уменьшении ширины в ф12 - наоборот увеличивается.
+        //Пыталась flex-shrink: менять 
+        // f12 (пишет .about-me__container "элементу разрешено уменьшаться" . это для flex-shrink: 1);
+
+        @media screen and (max-width: 900px) {
+            padding: 30px;
+        }
+    }
+
+
+    // .about-me-title {
+    //         about-me__title {
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 18px;
+        }
+    }
+}

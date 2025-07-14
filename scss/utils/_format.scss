@@ -1,0 +1,144 @@
+// _format.scss
+
+.border-tmp {
+  border: 1px solid red;
+}
+
+
+// использ. пока только projects__.scss
+.dots {
+  color: #bebebe;
+  font-weight: 100;
+}
+
+// .for-autonumb {
+//   // в <ol>- только первый li пронумеровало так. Решение другое - flex не li, a вложенному в него div-у
+//   display: list-item;
+// }
+
+//для автозаполнение средней части строки тире внизу
+.tire {
+  color: blue;
+  width: 100%;
+  // position: relative; см . в projects__item--row
+  position: relative; //для заливки тире tire
+
+
+  // &::before,
+  &::after {
+    content: "";
+    /* Символ, которым заполняем */
+    // display: block;
+    position: absolute;
+    // background-color: yellowgreen;
+    // height: 1px;
+    border: 2px dashed green;
+    // width: 100%;
+    // left: 0;
+    // // height: 100%;
+    // // text-align: center;
+    // /* Центрирование символа */
+    // line-height: 1;
+    // /* Вертикальное выравнивание */
+    // color: red;
+    // /* Цвет символа */
+    // width: 100%;
+  }
+
+
+  // &::before {
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   /* Занимает всю ширину */
+  // }
+
+  &::after {
+    bottom: 32%; //к низу чуть по высоте
+    left: 0;
+    width: 100%;
+    /* Занимает всю ширину */
+  }
+
+}
+
+.tech-name2 {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap; //иначе подчеркиваеи между текстами неприавльно, когда есть перенос текста в 2 строки
+
+  // &::before {
+  //   content: "";
+  //   /* Символ, которым заполняем */
+  //   display: block;
+  //   position: absolute;
+  //   border: 2px solid var(green);
+  //   width: 100%;
+  //   height: 100%;
+  //   text-align: center;
+  //   /* Центрирование символа */
+  //   line-height: 1;
+  //   /* Вертикальное выравнивание */
+  //   color: red;
+  //   /* Цвет символа */
+  // }
+}
+
+.tech-name {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+
+// .education-container,
+.work-container {
+  margin-top: 55px;
+}
+
+// // дальше перенесла в  _chagpt.scss  ---------------
+// //от примеров  chatgpt (в  index добавлены пока)
+// // @import './components/chagpt';  в main.scss
+
+// // Код index 
+// // <div class="container"><div class="item"></div><div class="item"></div><div class="item"></div></div>Код 
+// // код от примера1 chatgpt 
+
+// .container1 {
+//   display: flex;
+//   width: 300px;
+//   /* или любая другая ширина */
+//   height: 50px;
+//   background-color: lightgray;
+//   /* Для наглядности */
+// }
+
+
+// .item {
+//   flex-grow: 1;
+//   flex-basis: 0;
+//   background-color: lightblue;
+//   /* Для наглядности */
+//   position: relative;
+//   /* Необходимо для позиционирования псевдоэлемента */
+// }
+
+// .item:before {
+//   content: "*";
+//   /* Символ, которым заполняем */
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   text-align: center;
+//   /* Центрирование символа */
+//   line-height: 1;
+//   /* Вертикальное выравнивание */
+//   color: black;
+//   /* Цвет символа */
+// }
+
+// //  <p>-------Код от примера2 chatgpt c js расчет кол-ва символов</p>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My resume-lesson16-22 BEM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="css/styles-lesson-scss.css" /> -->
+    <!-- <link rel="stylesheet" href="./scss/main.scss" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Строго из уроков goit исходники.-->
+    <!--c 16/06/2025 переделка css в scss -->
+    <!-- main container -->
+    <div class="wrapper">
+      <aside class="sidebar">
+        <img
+          class="my-photo"
+          src="https://ac.goit.global/fullstack/img/adaptive/gus.png"
+          alt="my photo"
+        />
+
+        <div class="sidebar__row">
+          <!-- contacts container -->
+          <div class="contacts__container">
+            <h3 class="contacts__title">Contacts</h3>
+
+            <div>
+              <span class="contacts__link--type">C:</span>
+              <a class="contacts__link" href="tel:388888888888"
+                >+38 888 888 88 88</a
+              >
+            </div>
+            <div>
+              <span class="contacts__link--type">E:</span>
+              <a class="contacts__link" href="mailto:gaaga@gmail.com"
+                >gaaga@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="skills-row">
+            <!-- Tech skills container -->
+            <div class="tech-skills__container">
+              <h3 class="tech-skills__title">Tech Skills</h3>
+              <ul>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">HTML, CSS</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">JavaScript</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">React.js</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">Node.js</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Soft skills container -->
+            <div class="tech-skills__container">
+              <h3 class="tech-skills__title">Soft Skills</h3>
+              <ul>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">Scrum</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">Agile</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">GTD</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">Teamwork</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">Незламність</span>
+                </li>
+                <li class="tech-skills__item">
+                  <span class="tech-skills__text">Почуття гумору</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- about me container -->
+      <div class="about-me__container border-tmp">
+        <!-- about me main info -->
+        <div class="info__container border-tmp">
+          <h2 class="info__profession">Бойовий птах. Фронтендер</h2>
+          <h1 class="info__name">Гусак</h1>
+          <p class="info__description">
+            Довгий час я був звичайним гусаком, ходив і ґа-ґа-кав, але в 2019
+            році став айтівцем. У вільний час полюбляю гуляти волошковими
+            галявинами та розробляю сайти на фрілансі.
+          </p>
+        </div>
+
+        <!-- projects container -->
+        <div class="projects__container border-tmp">
+          <h3 class="about-me__title">Projects</h3>
+          <!-- <ol class="for-autonumb"> -->
+          <ol>
+            <li>
+              <!-- иначе (если без div) из-за li flex нет автонумерации -->
+              <div class="projects__item--row">
+                <a class="projects__link" href="https://hellen.p.goit.global/">
+                  https://hellen.p.goit.global/
+                </a>
+                <div class="tire"></div>
+
+                <p class="tech-name2"><b>[</b> HTML5, CSS3 <b>]</b></p>
+
+                <!-- <span class="dots">.........................</span> -->
+                <!-- <span>[ <span class="tech-name2">HTML5, CSS3</span> ]</span> -->
+              </div>
+            </li>
+            <li>
+              <div class="projects__item--row">
+                <a
+                  class="projects__link"
+                  href="https://cryptohub.p.goit.global/"
+                  >https://cryptohub.p.goit.global/</a
+                >
+                <div class="tire"></div>
+                <!-- <span class="dots">..................................</span> -->
+
+                <p class="tech-name2"><b>[</b> JavaScript <b>]</b></p>
+              </div>
+            </li>
+            <li>
+              <div class="projects__item--row">
+                <a class="projects__link" href="https://kidslike.p.goit.global/"
+                  >https://kidslike.p.goit.global/</a
+                >
+                <div class="tire"></div>
+
+                <p class="tech-name2"><b>[</b> React.js, Node.js <b>]</b></p>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Пример1 реализации -->
+          <div>
+            <p>-------Код от примера1 chatgpt</p>
+            <div class="container1">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+          </div>
+          <!-- Пример2 реализации с расчетом кол-ва символов js -->
+          <p>
+            ---Код от примера2 chatgpt c js расчет кол-ва символов (+fill.js)
+            <span style="color: blue">Но одна строка обрабаывается</span>
+          </p>
+          <div class="container2">
+            <div>Первый элемент</div>
+            <div class="filler2"></div>
+            <div>Третий элемент</div>
+          </div>
+
+          <!-- Пример2.1 реализации с расчетом кол-ва символов js  - списком (+fill.js)  div:first-child-->
+          <p>
+            <br />
+            ---Код от примера2.1 chatgpt - списком (+fill.js) вариант<br />
+            <span style="color: blue">
+              container.querySelector("div:first-child").offsetWidth;</span
+            >
+          </p>
+          <ol>
+            <li>
+              <div class="container3">
+                <div>Первый элемент</div>
+                <div class="filler"></div>
+                <div>Третий элемент</div>
+              </div>
+            </li>
+            <li>
+              <div class="container3">
+                <div>Первый элемент</div>
+                <div class="filler"></div>
+                <div>Третий элемент</div>
+              </div>
+            </li>
+            <li>
+              <div class="container3">
+                <div>Первый элемент</div>
+                <div class="filler"></div>
+                <div>Третий элемент</div>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Пример2.2 реализации с расчетом кол-ва символов js  - списком (+fill.js)-->
+          <p>
+            <br />
+            ---Код от примера2.2 chatgpt - списком (+fill.js) вариант<br />
+            <span style="color: blue"> container.children[0].offsetWidth;</span>
+          </p>
+          <ol>
+            <li>
+              <div class="container4">
+                <div>Первый элемент</div>
+                <div class="filler4"></div>
+                <div>Третий элемент</div>
+              </div>
+            </li>
+            <li>
+              <div class="container4">
+                <div>Первый элемент</div>
+                <div class="filler4"></div>
+                <div>Третий элемент</div>
+              </div>
+            </li>
+            <li>
+              <div class="container4">
+                <div>Первый элемент</div>
+                <div class="filler4"></div>
+                <div>Третий элемент</div>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Пример0 - из урока goit-->
+          <br />
+          <div>
+            <ol>
+              <li class="projects__item">
+                <a class="projects__link" href="https://hellen.p.goit.global/">
+                  https://hellen.p.goit.global/
+                </a>
+                <span class="dots">.........................</span>
+                <span
+                  ><b>[</b> <span class="tech-name">HTML5, CSS3</span>
+                  <b>]</b></span
+                >
+              </li>
+              <li class="projects__item">
+                <a
+                  class="projects__link"
+                  href="https://cryptohub.p.goit.global/"
+                  >https://cryptohub.p.goit.global/</a
+                >
+                <span class="dots">..................................</span>
+                <span
+                  ><b>[</b> <span class="tech-name">JavaScript</span>
+                  <b>]</b></span
+                >
+              </li>
+              <li class="projects__item">
+                <a class="projects__link" href="https://kidslike.p.goit.global/"
+                  >https://kidslike.p.goit.global/</a
+                >
+                <span class="dots">..................................</span>
+                <span
+                  ><b>[</b> <span class="tech-name">React.js, Node.js</span>
+                  <b>]</b></span
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- work experience -->
+        <div class="work-container border-tmp">
+          <h3 class="about-me__title">Work Experience</h3>
+
+          <!-- company 1 -->
+          <div>
+            <h4 class="profession__title">
+              Бойовий птах
+              <span class="profession__company">Перша біолабораторія</span>
+            </h4>
+            <span class="profession__time">
+              March 2022 - up to now
+              <span class="profession__divider">|</span> Ukraine
+            </span>
+
+            <ul class="profession__duties">
+              <li class="profession__duties--item">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit1
+              </li>
+              <li class="profession__duties--item">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit2
+              </li>
+              <li class="profession__duties--item">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit3
+              </li>
+              <li class="profession__duties--item">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit4
+              </li>
+            </ul>
+          </div>
+
+          <!-- company 2 -->
+          <div>
+            <h4 class="profession__title">
+              Front-End Developer
+              <span class="profession__company">Freelance</span>
+            </h4>
+            <span class="profession__time">
+              October 2019 - up to now
+              <span class="profession__divider">|</span> Ukraine
+            </span>
+
+            <ul class="profession__duties">
+              <li class="profession__duties--item">
+                Розробка сайтів і мобільних застосунків
+              </li>
+              <li class="profession__duties--item">
+                Виправлення помилок і покращення існуючого функціоналу
+              </li>
+              <li class="profession__duties--item">
+                Підвищення продуктивності SPA і статичних сайтів
+              </li>
+              <li class="profession__duties--item">
+                Рефакторинг існуючих шаблонів і програм
+              </li>
+            </ul>
+          </div>
+
+          <!-- company 3 -->
+          <div>
+            <h4 class="profession__title">
+              Гусак звичайний
+              <span class="profession__company">ФОП Баба Надя</span>
+            </h4>
+            <span class="profession__time">
+              June 2014 - February 2015
+              <span class="profession__divider">|</span> Ukraine
+            </span>
+
+            <ul class="profession__duties">
+              <li class="profession__duties--item">
+                Прогулянки волошковими полями
+              </li>
+              <li class="profession__duties--item">Ґа-ґа-ґа з друзями</li>
+              <li class="profession__duties--item">
+                Залякування перехожих та гостей (іноді наздоганяв та кусав)
+              </li>
+              <li class="profession__duties--item">
+                Охорона консервації та заготовка банок з огірками
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education__container border-tmp">
+          <h3 class="about-me__title education__title">Education</h3>
+          <p class="education__name">
+            Національний біологічний університет ім. Степана Бандери
+          </p>
+          <p class="education__speciality">Management</p>
+          <span class="profession__time">
+            September 2009 - June 2014
+            <span class="profession__divider">|</span> Ukraine
+          </span>
+          <p class="education__name">GoIT</p>
+          <p class="education__speciality">Fullstack Online</p>
+          <span class="profession__time">
+            January 2019 - October 2019
+            <span class="profession__divider">|</span> Ukraine
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- для примера расчета от ИИ -->
+    <script src="./js/fill.js"></script>
+  </body>
+</html>

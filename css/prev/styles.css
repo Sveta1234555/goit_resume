@@ -1,0 +1,420 @@
+body {
+  background: #f6f6fa;
+  /* padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px; */
+
+  padding: 40px 40px 40px 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #727374;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wrapper {
+  /* background: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1250px;
+  margin: 0 auto; */
+  margin: 20px auto;
+  box-shadow: 5px 9px 20px rgb(0 0 0);
+  /* 900px; */
+  width: 360px;
+  padding: 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.photo {
+  /* width: 300px; */
+  width: 100%;
+}
+
+.about-me {
+  display: flex;
+  /* margin-bottom: 30px; */
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.my-info {
+  margin-top: 20px;
+  /* margin-bottom: 40px; */
+  /* margin-left: 20px; */
+}
+
+.my-name {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.my-description-text {
+  /* нет в index */
+  margin-right: 20px;
+}
+
+.my-description {
+  /* нет в index */
+  display: flex;
+  flex-direction: column;
+}
+
+.my-skills,
+.my-projects,
+my-works,
+my-education {
+  display: flex;
+  /* Пиши код нижче */
+  flex-direction: column;
+}
+
+.skills-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px 0;
+
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  order: 2;
+}
+
+.skills-text p {
+  margin: 0;
+}
+
+/* Main Content */
+.main-content {
+  /* padding-left: 88px; */
+  padding-top: 80px;
+  /* padding-right: 40px; */
+  padding-bottom: 80px;
+
+  /* это версия для без кратинки в основной части, она ресайзится в версиях index2025_06_10.html+ styles_2025_06_10.css */
+  padding: 110px 90px;
+  box-sizing: border-box;
+}
+
+/* sidebar */
+.sidebar {
+  background: #e0ebfe;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  /* width: 370px;  
+  Так (убрать строку) исправляется, что  в IE Выходит за sideBar картинка */
+  width: 370px;
+}
+
+.sidebar-content {
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+/* Conacts */
+.contacts-title {
+  color: #161d2a;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.contacts-type {
+  color: #161d2a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.contacts-link {
+  color: #2979ff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.contacts-item {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.contacts-container {
+  margin-bottom: 40px;
+}
+
+/* Skills-container */
+.skills-container {
+  margin-bottom: 40px;
+}
+
+.skills-title {
+  color: #161d2a;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.skills-list {
+  padding-left: 16px;
+}
+
+.skills-list-item {
+  color: #161d2a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Main content */
+.my-profession {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.my-name-fio {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.my-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.description-text {
+  /* нет в index */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  /* margin-right: 20px; */
+}
+
+.my-descr {
+  /* нет в index */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 20px;
+}
+
+.work-place {
+  /* нет в index */
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* My projects */
+.my-projects-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.my-projects-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+.my-projects-list {
+  padding-left: 16px;
+}
+
+.my-projects-item-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: #005fff;
+}
+
+.my-projects-item-tech {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.my-projects-container {
+  margin-bottom: 40px;
+}
+
+/* Work experience */
+.work-experience-container {
+  margin-bottom: 40px;
+}
+
+.work-experience-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.work-experience-company {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.company-name {
+  color: #6d9bf5;
+}
+
+.work-experience-period {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-bottom: 8px;
+}
+
+.work-experience-period-separator {
+  color: #000;
+}
+
+.work-experience-duties-list {
+  padding-left: 16px;
+}
+
+.work-experience-duties-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.work-experience-container {
+  margin-bottom: 12px;
+}
+
+/* Education */
+.education-container {
+  margin-top: 40px;
+}
+
+.education-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.education-zaklad {
+  font-weight: 700;
+  font-size: 16px;
+  color: #6d9bf5;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.education-prof {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.education-period {
+  font-weight: 400;
+  font-size: 12px;
+  color: #a8a8a8;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.education-period-separator {
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .about-me {
+    padding: 0;
+  }
+
+  body {
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+} */

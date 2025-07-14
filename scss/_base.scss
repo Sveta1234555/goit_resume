@@ -1,0 +1,75 @@
+/* Base */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    /* размеры блока padding  border  отсчитывать внутрь блока */
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f7fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Montserrat;
+}
+
+
+
+
+//дальше - из курса из _base.scss
+// body {
+//     color: var(--color-primary-dark);
+//     background-color: var(--color-primary-light);
+//     font-family: "Poppins", sans-serif;
+//     // font-size: 18px;     //было для десктопной версии, перенсели в ч.2 @media
+//     font-size: 16px; //для адаптива , это для моб. версии
+//     // font-weight: 400;    //было для десктопной версии, перенсели в ч.2 @media
+//     font-weight: 300; //для адаптива , это для моб. версии
+//     line-height: 1.5;
+//     margin: 0;
+
+//     @media screen and (min-width: $bp-tablet) {
+//         font-size: 18px; // для десктопной версии др шрифт в параграфе. Он базовый. наследуется
+//         font-weight: 400; //для десктопной версии
+//     }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+
+// img - стиль от финпроекта. Убираю - узенько sidebar из=за этого (из-за  max-width: 100%)
+// img {
+//     display: block; //по-умолч изоюражения строковые элементы
+//     max-width: 100%; //чтобы были респонсивными по-умолч . имеют маки ширину и имеют возможность масштабироваться, а не оставаться фиксированного указанного размера
+//     height: auto;
+//     object-fit: cover; //чтобы растягивались ПРОПОРЦИОНАЛЬНО динамически картинки при расширении экрана
+// }
+
+a {
+    /* всем ссылкам, чтобы сделать ссылку блоковой. Т.е. в нем буду работать размеры,
+    но оно останется строчный(рядковым) . т.е. не будет растягиваться на всю ширину родительского элемента. */
+    display: inline-block;
+}
+
+// address {
+//     font-style: normal;
+// }
+
+ul {
+    margin: 0;
+    padding: 0;
+    /* убрать значки кружков перед элементами списка ВСЕХ на странице. селектор тэга ul, без классов*/
+    // list-style-type: none;
+}

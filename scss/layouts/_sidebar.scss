@@ -1,0 +1,37 @@
+.sidebar {
+    background: #1e2939;
+    width: 370px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        display: flex;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    // .sidebar-row
+    // sidebar__row
+    &__row {
+        @media screen and (max-width: 600px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.my-photo {
+    width: 370px;
+
+
+    @media screen and (max-width: 900px) {
+        width: 50%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}

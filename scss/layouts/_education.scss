@@ -1,0 +1,41 @@
+// _education.scss
+.education {
+
+    // .education-container
+    // education__container
+    &__container {
+        margin-top: 55px;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 30px;
+        }
+    }
+
+    // .education-title {
+    //         education__title {
+    &__title {
+        margin-bottom: 15px;
+    }
+
+
+
+    // .univ-name {
+    //             education__name 
+    &__name {
+        color: #ff6b08;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        /* margin-bottom: 15px; */
+        margin-top: 15px;
+    }
+
+    // .univ-speciality {
+    // education__speciality {
+    &__speciality {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        /* margin-bottom: 15px;  убрать, чтобы даты серые были ближе к заголовку */
+    }
+}
